@@ -1,0 +1,154 @@
+<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topologias</title>
+    <style>
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        <style type="text/css">
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+          background: url(comput.gif); 
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: center;
+          height: -5000vh;
+}
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin: 20px;
+            border: 0px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .text-box {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .text-box h2 {
+            margin-top: 0;
+        }
+        .image-box {
+            flex: 1;
+            text-align: right;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: justify-all;
+            }
+            .text-box {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+            .image-box img {
+                max-width: 100%;
+            }
+        }
+        .my-button {
+  padding: 20px 40px;
+  background-color: #59055A ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.my-button:hover {
+  background-color: #FAC8DE ;
+}
+.my-button:active {
+  background-color: #75064C ;
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'century gothic';
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #4657F2,
+                 0 0 10px #5DE2E7, 
+                 0 0 20px #5DE2E7, 
+                 0 0 30px #5DE2E7, 
+                 0 0 40px #5DE2E7, 
+                 0 0 55px #000000, 
+                 0 0 70px #000000;
+}
+    </style>
+</head>
+<body>
+<div style="font-size:40px;text-align:center;color:#FCFCFD;font-family:comic sans;">
+           <center>
+            <h1>Topologias De Red<h1>
+        </center>
+          </div>
+<center>
+<table>
+
+    <tr>
+        <th style="background-color: #08158A; color: white;">Tipos de Topologia</th>
+        <th style="background-color: #08158A; color: white;">Definición</th>
+        <th style="background-color: #08158A; color: white;">Imagen</th>
+    </tr>
+    <tr>
+        <td style="background-color: #727FF4; color: black;">Topología en estrella</td>
+        <td style="background-color: #48C5FF; color: black;">Todos los dispositivos están conectados a un nodo central (como un switch o un hub). Es fácil de instalar y gestionar, pero si el nodo central falla, toda la red se cae.</td>
+        <td style="background-color: #0173A7; color: black;"><img src="t2.jpeg" alt="redes de computadoras" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td style="background-color: #727FF4; color: black;">Topología en bus</td>
+        <td style="background-color: #48C5FF; color: black;">Todos los dispositivos están conectados a un único cable central. Es económica y fácil de implementar, pero difícil de solucionar problemas y no es escalable.</td>
+        <td style="background-color: #0173A7; color: black;"><img src="t1.jpeg" alt="redes de computadoras" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td style="background-color: #727FF4; color: black;">Topología en anillo</td>
+        <td style="background-color: #48C5FF; color: black;">Los dispositivos están conectados en un bucle cerrado. Cada dispositivo tiene exactamente dos vecinos. Si un dispositivo falla, puede afectar toda la red, aunque algunos usan anillos redundantes para mayor confiabilidad.</td>
+        <td style="background-color: #0173A7; color: black;"><img src="t3.jpeg" alt="redes de computadoras" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td style="background-color: #727FF4; color: black;">Topología en malla</td>
+        <td style="background-color: #48C5FF; color: black;">Cada dispositivo está conectado a todos los demás. Es muy robusta ya que múltiples rutas pueden existir entre los dispositivos, pero es costosa y compleja de instalar.</td>
+        <td style="background-color: #CC5DCE; color: black;"><img src="t5.jpeg" alt="redes de computadoras" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td style="background-color: #727FF4; color: black;">Topología híbrida</td>
+        <td style="background-color: #48C5FF; color: black;">Combinación de dos o más topologías. Es flexible y escalable, pero también puede ser compleja y costosa.</td>
+        <td style="background-color: #0173A7; color: black;"><img src="t6.jpeg" alt="redes de computadoras" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td style="background-color: #727FF4; color: black;">Topología de árbol</td>
+        <td style="background-color: #48C5FF; color: black;">Combina estrella y bus. Estructura jerárquica con un nodo raíz, nodos intermedios y nodos hoja. Escalable y fácil de gestionar, pero fallos en nodos intermedios pueden desconectar ramas enteras.</td>
+        <td style="background-color: #0173A7; color: black;"><img src="t4.jpeg" alt="redes de computadoras" width="150" height="100"></td>
+    </tr>
+</table>
+</center>
+<center>
+<a href="Fundamentos.html"> 
+<button class="my-button">Regresar</button>
+</a>
+</center>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Pagina</title>
+</head>
+
+<svg viewbox="0 0 100 20">
+  <defs>
+    <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="10%" stop-color="#000000"/>
+      <stop offset="55%" stop-color="#FB0303"/>
+    </linearGradient>
+    <pattern id="wave" x="0" y="0" width="120" height="15" patternUnits="userSpaceOnUse">
+      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+        <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="1.5s"
+            type="translate"
+            from="0,0"
+            to="50,0"
+            repeatCount="indefinite" />
+      </path>
+    </pattern>
+  </defs>
+  <text text-anchor="middle" x="50" y="15" font-size="12" fill="url(#wave)"  fill-opacity="0.7">Menu Principal</text>
+  <text text-anchor="middle" x="50" y="15" font-size="12" fill="url(#gradient)" fill-opacity="0.7"> Menu Principal</text>
+</svg>
+
+
+
+<style type=>
+* {
+  margin: 0;
+  padding: -100000;
+  box-sizing: border-box;
+  } 
+body {
+  background: url(h.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: center;
+  height: -5000vh;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+}
+ul li a {
+  color: #C80303;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px 10px;
+  display: inline-flex;
+  font-weight: 100;
+  transition: 0.5s;
+}
+ul:hover li a {
+  color: #000000;
+}
+ul li:hover a {
+  color:  #FFFFFF;
+  background: transparent;
+}
+
+ul li a:before {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: rgb(149, 25, 25);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 50;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 50;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 2000px;
+  height: 2000px;
+}
+ul li:nth-child(6n + 1) a:before {
+  background: #000000;
+}
+ul li:nth-child(6n + 2) a:before {
+  background: #000000;
+}
+ul li:nth-child(6n + 3) a:before {
+  background: #000000;
+}
+ul li:nth-child(6n + 4) a:before {
+  background: #893E80;
+}
+ul li:nth-child(6n + 5) a:before {
+  background: #7E39F5;
+}
+ul li:nth-child(6n + 6) a:before {
+  background: #BA88F1;
+}
+ul li:nth-child(6n + 7) a:before {
+  background: #BA88F1;
+}
+ul li:nth-child(6n + 8) a:before {
+  background: #BA88F1;
+}
+
+
+</style>
+<body>
+  <ul>
+   
+    <li><a href="filas.html" data-text="">Calculo de Suma</a></li>
+    <li><a href="inventarios.html" data-text="">Teorema de Pitagoras</a></li>
+    <li><a href="existencias.html" data-text="">Calculo de Promedio</a></li>
+    <li><a href="filas.html" data-text="">Sueldo</a></li>
+    <li><a href="inventarios.html" data-text="">IMC</a></li>
+    <li><a href="existencias.html" data-text="">Paqueteria</a></li>
+    <li><a href="existencias.html" data-text="">Tabla de Multiplicar</a></li>
+    <li><a href="existencias.html" data-text="">Suma entre Numeros</a></li>
+  </ul>
+
+</body>
+
+</html>

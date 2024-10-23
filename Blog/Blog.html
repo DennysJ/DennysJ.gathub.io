@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>blog</title>
+</head>
+<header>
+        <h1>Buscar en el Sitio</h1>
+        <div class="search-bar">
+            <form action="/buscar" method="GET">
+                <input type="text" name="query" placeholder="Escribe aquí para buscar...">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </header>
+<svg viewbox="0 0 100 20">
+  <defs>
+    <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="10%" stop-color="#000000"/>
+      <stop offset="55%" stop-color="#FB0303"/>
+    </linearGradient>
+    <pattern id="wave" x="0" y="0" width="120" height="15" patternUnits="userSpaceOnUse">
+      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+        <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="1.5s"
+            type="translate"
+            from="0,0"
+            to="50,0"
+            repeatCount="indefinite" />
+      </path>
+    </pattern>
+  </defs>
+  <text text-anchor="middle" x="50" y="15" font-size="9" fill="url(#wave)"  fill-opacity="0.7">Redes de Computadoras</text>
+  <text text-anchor="middle" x="50" y="15" font-size="9" fill="url(#gradient)" fill-opacity="0.7"> Redes de Computadoras</text>
+</svg>
+
+
+
+<style type=>
+* {
+  margin: 0;
+  padding: -100000;
+  box-sizing: border-box;
+  } 
+body {
+  background: url(f1.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: center;
+  height: -5000vh;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+}
+ul li a {
+  color: #036a46 ;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px 10px;
+  display: inline-flex;
+  font-weight: 100;
+  transition: 0.5s;
+}
+ul:hover li a {
+  color: #000000;
+}
+ul li:hover a {
+  color:  #FFFFFF;
+  background: transparent;
+}
+
+ul li a:before {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: rgb(149, 25, 25);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 50;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 50;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 2000px;
+  height: 2000px;
+}
+ul li:nth-child(6n + 1) a:before {
+  background: #006069 ;
+}
+ul li:nth-child(6n + 2) a:before {
+  background: #057c87 ;
+}
+ul li:nth-child(6n + 3) a:before {
+  background: #088f9b ;
+}
+ul li:nth-child(6n + 4) a:before {
+  background: #0898a5 ;
+}
+ul li:nth-child(6n + 5) a:before {
+  background: #0aaebd ;
+}
+ul li:nth-child(6n + 6) a:before {
+  background: #BA88F1;
+}
+ul li:nth-child(6n + 7) a:before {
+  background: #BA88F1;
+}
+ul li:nth-child(6n + 8) a:before {
+  background: #BA88F1;
+}
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .search-bar {
+            margin-top: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .search-bar input[type="submit"]:hover {
+            background-color: #ddd;
+        }
+
+</style>
+<body>
+
+  <ul>
+   
+    <li><a href="Definicion.html" data-text="">Definición</a></li>
+    <li><a href="Historia.html" data-text="">Historia</a></li>
+    <li><a href="Funcion.html" data-text="">Funcion</a></li>
+    <li><a href="Estructura.html" data-text="">Estructura</a></li>
+    <li><a href="TiposdeRedes.html" data-text="">Tipos de Redes</a></li>
+    <li><a href="Paqueteria.html" data-text="">Paqueteria</a></li>
+    <li><a href="Ta.html" data-text="">Tabla de Multiplicar</a></li>
+    <li><a href="existencias.html" data-text="">Suma entre Numeros</a></li>
+  </ul>
+
+</body>
+
+</html>

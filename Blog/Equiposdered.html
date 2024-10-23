@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>Fundamentos</title>
+</head>
+
+<header>
+        <h1>Buscar en el Sitio</h1>
+        <div class="search-bar">
+            <form action="/buscar" method="GET">
+                <input type="text" name="query" placeholder="Escribe aquí para buscar...">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </header>
+
+<style>
+* {
+  margin: 0;
+  padding: -100000;
+  box-sizing: border-box;
+  } 
+body {
+  background: url(ll.gif); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: center;
+  height: -5000vh;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+}
+ul li a {
+  color: #BD63F6;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: courier;
+  padding: 5px 10px;
+  display: inline-flex;
+  font-weight: 100;
+  transition: 0.5s;
+}
+ul:hover li a {
+  color: white;
+}
+ul li:hover a {
+  color: #070680  ;
+  background: transparent;
+}
+
+ul li a:before {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color:rgb 4, 80, 97.1;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 10;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 50;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 2000px;
+  height: 2000px;
+}
+ul li:nth-child(6n + 1) a:before {
+  background: #F824D7 ;
+}
+ul li:nth-child(6n + 2) a:before {
+  background:  #EA43D2 ;
+}
+ul li:nth-child(6n + 3) a:before {
+  background: #D656C3 ;
+}
+ul li:nth-child(6n + 4) a:before {
+  background: #B766AB ;
+}
+ul li:nth-child(6n + 5) a:before {
+  background: #0aaebd ;
+}
+ul li:nth-child(6n + 6) a:before {
+  background: #BA88F1;
+}
+ul li:nth-child(6n + 7) a:before {
+  background: #BA88F1;
+}
+ul li:nth-child(6n + 8) a:before {
+  background: #BA88F1;
+}
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #F824F0;
+            color: white;
+            text-align: center;
+            font-family: papyrus;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #F824F0 ;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-family: papyrus;
+        }
+        .search-bar {
+            margin-top: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #0bbdca;
+            cursor: pointer;
+        }
+        .search-bar input[type="submit"]:hover {
+            background-color: #ddd;
+        }
+        <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+
+        h2 {
+            font-size: 4em;
+            font-weight: bold;
+            font-family: Comic-Sans;
+            background: linear-gradient(90deg, #F824F0, #F8D724, #9524F8, #F8244B);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradient 8s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+</style>
+</style>
+
+</style>
+<body>
+  <center><h2>Equipos de Red</h2></center>
+  <ul>
+    <li><a href="Routers.html" data-text="">Routers, Switches y Hubs</a></li>
+    <li><a href="Servidores.html" data-text="">Servidores proxy</a></li>
+    <li><a href="Balanceadores.html" data-text="">Balanceadores de Carga</a></li>
+    <li><a href="blogfinal.html" data-text="">Pagina Principal</a></li>
+  </ul>
+<footer>
+        <p>&copy; 2024 Denny´s Network. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
